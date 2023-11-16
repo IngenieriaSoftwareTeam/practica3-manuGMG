@@ -6,11 +6,11 @@ class Calculator {
   }
 
   subtract(a, b) {
-    /* TODO*/
+    return a - b;
   }
 
   multiply(a, b) {
-    /* TODO*/
+    return a * b;
   }
 
   divide(a, b) {
@@ -21,7 +21,10 @@ class Calculator {
   }
 
   squareRoot(num) {
-    /* TODO*/
+    if (num < 0) {
+      throw new Error('Raiz no puede ser un numero negativo');
+    }
+    return Math.sqrt(num);
   }
 }
 

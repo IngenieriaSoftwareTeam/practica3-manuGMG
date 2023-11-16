@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "lint": "eslint . --ext .js . --fix",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
   },
   "author": "",
   "license": "ISC",
